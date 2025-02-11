@@ -1,8 +1,5 @@
 # Reflect, Reason, Rephrase ($\textup{R}^3$-Detox) : An In-Context Learning Approach to Text Detoxification
 <div align="center">
-<!---[[Website]](https://eureka-research.github.io)-->
-[[arXiv]]()
-<!---[[PDF]](https://arxiv.org/pdf/2411.04090)-->
 
 [![Python Version](https://img.shields.io/badge/Python-3.10-blue.svg)](https://github.com/TheMrguiller/Collaborative-Content-Moderation)
 [<img src="https://img.shields.io/badge/Framework-PyTorch-red.svg"/>](https://pytorch.org/)
