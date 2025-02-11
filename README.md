@@ -1,7 +1,15 @@
 # Reflect, Reason, Rephrase ($\textup{R}^3$-Detox) : An In-Context Learning Approach to Text Detoxification
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TheMrguiller/R-3-Detox/main/resources/methodology.svg" width="800">
-  <p><em>Figure 1: Overall diagram of the proposed $\textup{R}^3$-Detox framework. Initially, we preprocess the data presented in Section \ref{dataset} by extracting SHAP values from a set of toxicity detectors. Next, we generate guided reasoning using a set of self-reflection models. We then process their output reasoning to ensure that it contains no code-switching or data leakage, meaning the final non-toxic paraphrase is not explicitly present in the reasoning prior to the detoxification phase. We then evaluate the models and select the best reasoning for each comment. Finally, we validate the few-shot learning examples generated through our $\textup{R}^3$-Detox framework by comparing them to state-of-the-art detoxification techniques using ICL. </em></p>
+<!---[[Website]](https://eureka-research.github.io)-->
+[[arXiv]]()
+<!---[[PDF]](https://arxiv.org/pdf/2411.04090)-->
+
+[![Python Version](https://img.shields.io/badge/Python-3.10-blue.svg)](https://github.com/TheMrguiller/Collaborative-Content-Moderation)
+[<img src="https://img.shields.io/badge/Framework-PyTorch-red.svg"/>](https://pytorch.org/)
+[![GitHub license](https://img.shields.io/github/license/eureka-research/Eureka)](LICENSE)
+______________________________________________________________________
+<img src="https://raw.githubusercontent.com/TheMrguiller/R-3-Detox/main/resources/methodology.svg" width="800">
+<p><em>Figure 1: Overall diagram of the proposed $\textup{R}^3$-Detox framework. Initially, we preprocess the data presented in Section \ref{dataset} by extracting SHAP values from a set of toxicity detectors. Next, we generate guided reasoning using a set of self-reflection models. We then process their output reasoning to ensure that it contains no code-switching or data leakage, meaning the final non-toxic paraphrase is not explicitly present in the reasoning prior to the detoxification phase. We then evaluate the models and select the best reasoning for each comment. Finally, we validate the few-shot learning examples generated through our $\textup{R}^3$-Detox framework by comparing them to state-of-the-art detoxification techniques using ICL. </em></p>
 </div>
 
 ## Abstract
