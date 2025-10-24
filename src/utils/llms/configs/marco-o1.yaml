@@ -1,0 +1,7 @@
+config:
+    model_name: AIDC-AI/Marco-o1
+    max_tokens: 8192
+    special_thought_tokens_start: <Thought>
+    special_thought_tokens_end: </Thought>
+    special_output_tokens_start: <Output>
+    special_output_tokens_end: </Output>

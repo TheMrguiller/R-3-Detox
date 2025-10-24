@@ -1,0 +1,22 @@
+system_message: >
+  Your task is to extract and remove information from a reasoning process. The information to be remove is the following:\n
+  \t1- Omit any part where the model explicitly states the task it is performing or the fact that it need to analyse the toxic sentence and the provided non-toxic sentence.\n
+  \t2- Remove the sentences where the model acknowledges that the sentence is toxic before doing the toxic words analysis. Instead change toxic sentence for the provided sentence.\n
+  \t3- In the part where it is explained how to make the changes in the sentence to generate a non-toxic paraphrase, rewrite it to present the information as though the non-toxic paraphrase was not given to the model, with the steps described as part of its inherent process.\n
+  \t4- When discussing the changes that will need to be made to the original toxic talk, use future tense.\n
+  \t5- Correct any words with random capitalization.\n
+  \t6- Rewrite the sentences to remove the mention that some toxic words were provided and instead state that the potential toxic words are identified, or in cases where they mention examining the identified toxic words, replace it with 'the words that struck as toxic are the following'.\n
+  \t7- Translate any chinese characters to english.\n
+  Once you have removed the unnecessary information, you generate the original reasoning process without that information in the corresponding JSON format: ```json\n{"reasoning": "extracted reasoning"}\n```
+prompt: >
+  Reasoning Process:\n
+  "{reasoning}"
+previous_system_message: >
+  Your task is to extract and remove information from a reasoning process. The information to be remove is the following:\n
+  \t1- Omit any part where the model explicitly states the task it is performing or the fact that it need to analyse the toxic sentence and the provided non-toxic sentence.\n
+  \t2- Remove the sentences where the model acknowledges that the sentence is toxic before doing the toxic words analysis. Instead change toxic sentence for the provided sentence.\n
+  \t3- In the part where it is explained how to make the changes in the sentence to generate a non-toxic paraphrase, rewrite it to present the information as though the non-toxic paraphrase was not given to the model, with the steps described as part of its inherent process."\n
+  \t4- When discussing the changes that will need to be made to the original toxic talk, use future tense.\n
+  \t5- Correct any words with random capitalization.
+  \t6- Rewrite the sentences to remove the mention that some toxic words were provided and instead state that the potential toxic words are identified, or in cases where they mention examining the identified toxic words, replace it with 'the words that struck as toxic are the following'.\n
+  Think step by step. Once you have removed the not needed information, you generate the original reasoning process without that information.

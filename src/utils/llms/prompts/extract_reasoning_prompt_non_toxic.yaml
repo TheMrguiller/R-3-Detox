@@ -1,0 +1,18 @@
+system_message: >
+  Your task is to extract and remove information from a reasoning process. The information to be remove is the following:\n
+  \t1- Omit any part where the model explicitly states the task it is performing.\n
+  \t2- Eliminate any comments that stated that first it must define what is toxicity.\n
+  \t3- Rewrite any sentence that states that 'I need to determine why the provided sentence is not toxic' with 'I need to determine the toxicity of the sentence'.\n
+  \t4- Rewrite the sentences to remove the mention that some toxic words were provided and instead state that the potential toxic words are identified, or in cases where they mention examining the identified toxic words, replace it with 'the words that struck as toxic are the following'\n
+  \t5- Translate any chinese characters to english.\n
+  Once you have removed the unnecessary information, you generate the original reasoning process without that information in the corresponding JSON format: ```json\n{"reasoning": "extracted reasoning"}\n```.
+prompt: >
+  Reasoning Process:\n
+  "{reasoning}"
+previous_system_message: >
+  Your task is to extract and remove information from a reasoning process. The information to be remove is the following:\n
+  \t1- Omit any part where the model explicitly states the task it is performing.\n
+  \t2- Eliminate any comments that stated that first it must define what is toxicity.\n
+  \t3- Rewrite any sentence that states that 'I need to determine why the provided sentence is not toxic' with 'I need to determine the toxicity of the sentence'.\n
+  \t4- Rewrite the sentences to remove the mention that some toxic words were provided and instead state that the potential toxic words are identified, or in cases where they mention examining the identified toxic words, replace it with 'the words that struck as toxic are the following'\n
+  Think step by step. Once you have removed the not needed information, you generate the original reasoning process without that information.

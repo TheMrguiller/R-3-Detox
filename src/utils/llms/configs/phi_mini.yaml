@@ -1,0 +1,3 @@
+config:
+  model_name: microsoft/Phi-3-mini-4k-instruct
+  max_tokens: 4096

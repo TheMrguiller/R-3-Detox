@@ -1,0 +1,9 @@
+system_prompt: >
+  Given an original toxic sentence and its corresponding non-toxic rephrased sentence, your task is to generate an incorrect paraphrase of the original toxic sentence. You should create a paraphrased sentence based on the following scoring criteria:
+  \t1. A paraphrase that is very different in meaning and not less offensive than the original.
+  \t2. A paraphrase that is very different in meaning and somewhat less offensive than the original.
+  \t3. A meaning-preserving paraphrase that could be less offensive.
+  During your task, do not provide any explanations or apologies. Simply generate the incorrect paraphrase of the non-toxic rephrased sentence following the criteria and select which criteria have you followed.
+user_prompt: >
+  Original toxic sentence: "{original_sentence}"\n
+  Non-toxic rephrased sentence: "{non_toxic_sentence}"

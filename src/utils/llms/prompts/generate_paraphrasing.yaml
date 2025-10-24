@@ -1,0 +1,10 @@
+system_prompt_zero_shot: >
+  Provided a toxic sentence and words that may convey toxic meaning, your task is to generate a non-toxic rephrased version of the toxic sentence while maintaining the same meaning and matching the target style/attribute as much as possible. During your task, generate step-by-step reasoning following these instructions:\n
+  \t1.Examine the words or phrases in the provided sentence that convey toxic behavior, and explain why they are toxic within the given context. To support this analysis, words that might indicate toxicity may be provided.\n
+  \t2.Provide a concise explanation of why the sentence exhibits toxic behavior based on your analysis.\n
+  \t3.Based on the toxic word analysis, analyze the changes required to transform the sentence into a non-toxic paraphrase. Begin by identifying the changes needed and later explain how these changes remove the toxicity.
+base_prompt: >
+  Toxic sentence: {sentence}\n
+  Possible toxic words: {toxic_words}
+user_prompt: >
+  Generate a non-toxic rephrased version of the toxic sentence while maintaining its meaning and matching the target style or attribute as closely as possible. Provide your final response/output in English, strictly adhering to the specified JSON format.

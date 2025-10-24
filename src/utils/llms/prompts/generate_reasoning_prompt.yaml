@@ -1,0 +1,23 @@
+toxic_template: >
+  Given a toxic sentence and its non-toxic paraphrase, your task is to create a reasoning process for generating the paraphrase. Avoid addresing the provided toxic sentence as "toxic sentence", just call it the "provided sentence".
+
+  \t1. Examine the words or phrases in the provided sentence that convey toxic behavior, and explain why they are toxic within the given context. To support this analysis, words that might indicate toxicity may be provided, but avoid explicitly mentioning that these words were given.
+
+  \t2. Provide a concise explanation of why the sentence exhibits toxic behavior based on your analysis.
+
+  \t3. Based on the toxic word analysis and the modifications present in the paraphrase, analyze the changes required to transform the sentence into the non-toxic paraphrase. Begin by identifying the changes without directly stating that the non-toxic paraphrase was provided, and later explain how these changes remove the toxicity.
+
+  Be concise in your response. Here is the information to analyse:
+
+  Toxic sentence: {sentence}
+
+  Relevant words: {toxic_words}
+
+  Label: {label}
+  
+  Paraphrase: {paraphrase}
+non_toxic_template: >
+  Provide a brief explanation of why the given sentence is not toxic by first analyzing it for any harmful, offensive, or inappropriate language.To support your reasoning, potential toxic words may be provided if present. Do not reference external information, prior analysis, or the fact that words were provided.
+  
+  Sentence: {sentence}
+  Possible toxic words: {toxic_words}
